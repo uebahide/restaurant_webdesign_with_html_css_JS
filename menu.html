@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <!--  -->
+
+   <!-- font awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+   <!--  -->
+
+  <link rel="stylesheet" id="stylesheet" href="style_light_mode.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+  <title>Menu-Dream Restaurant</title>
+</head>
+<!-- デスクトップファースト -->
+<body>
+  <a href="#content" class="skip-link">Skip to Main Content</a>
+  <header>
+    <div id="banner">
+      <p>Have a wonderful time.</p>
+    </div>
+    
+    <h1 id="title">Menu</h1>
+  </header>
+
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link active" href="menu.html">Menu</a>
+          <a class="nav-item nav-link" href="information.html">Information</a>
+          <a class="nav-item nav-link" href="reservation.html">Reservation</a>
+          <a class="nav-item nav-link" href="delivary.html">Delivary</a>
+          <a class="nav-item nav-link" href="aboutus.html">About us</a>
+        </div>
+      </div>
+      <div class="font_size_plus" onclick="bigger()">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="font_size_minus" onclick="smaller()">
+        <i class="fas fa-minus"></i>
+      </div>
+      <div class="setting_icon" onclick="changeMode()">
+        <i class="fas fa-cog" id="setting">dark mode</i>
+      </div>
+    </nav>
+
+    <div id="content">
+      <section class="menu">
+        <h2>Recommendations</h2>
+        <p>Seasonal menu on sale! <br>
+          Spring fruitcakes are now available only in April. <br>
+          Please check information!
+        </p>
+        <figure>
+          <img src="source/images/reccomendation/brooke-lark-V4MBq8kue3U-unsplash.jpg" alt="recommendation1">
+          <img src="source/images/reccomendation/jennie-brown-MKBoRZEGeiM-unsplash.jpg" alt="recommandationfa-rotate-270">
+          <img src="source/images/reccomendation/lore-schodts-FIxdY7jOBus-unsplash.jpg" alt="recommandation3">
+          <img src="source/images/reccomendation/lore-schodts-FIxdY7jOBus-unsplash.jpg" alt="recommandation4">
+        </figure>
+      </section>
+      
+      <section class="menu">
+        <h2>Popular</h2>
+        <p>These are the popular menus.</p>
+        <figure>
+          <img src="source/images/meal/ca-creative-bpPTlXWTOvg-unsplash.jpg" alt="popular1">
+          <img src="source/images/party/jed-owen-q6Y8Xr3SoQA-unsplash.jpg" alt="popular2">
+          <img src="source/images/party/shayna-douglas-H8qwryGP_h0-unsplash.jpg" alt="popular3">
+          <img src="source/images/meal/nikolay-smeh-gPpbFaEkl00-unsplash.jpg" alt="popular4">
+        </figure>
+      </section>
+      
+      <section class="menu">
+        <h2>Party menu</h2>
+        <p>These menus are good for the party!</p>
+        <figure>
+          <img src="source/images/party/jed-owen-q6Y8Xr3SoQA-unsplash.jpg" alt="party1">
+          <img src="source/images/party/ralph-ravi-kayden-AUlyA3qaHJQ-unsplash.jpg" alt="party2">
+          <img src="source/images/party/shayna-douglas-H8qwryGP_h0-unsplash.jpg" alt="party3">
+          <img src="source/images/party/spencer-davis-5UeN8VrCxvs-unsplash.jpg" alt="party4">
+        </figure>
+      </section>
+      <section class="menu">
+        <h2>Meals</h2>
+        <p>These are the meals.</p>
+        <figure>
+          <img src="source/images/meal/ca-creative-bpPTlXWTOvg-unsplash.jpg" alt="meal1">
+          <img src="source/images/meal/carly-jayne-Lv174o7fn7Y-unsplash.jpg" alt="meal2">
+          <img src="source/images/meal/chaewon-lee-sBOl-XPYv9M-unsplash.jpg" alt="meal3">
+          <img src="source/images/meal/nikolay-smeh-gPpbFaEkl00-unsplash.jpg" alt="meal4">
+        </figure>
+      </section>
+      <section class="menu">
+        <h2>Dessert</h2>
+        <p>These are the desserts.</p>
+        <figure>
+          <img src="source/images/dessert/aliona-gumeniuk-GAauSStia3s-unsplash.jpg" alt="dessert1">
+          <img src="source/images/dessert/diliara-garifullina-Gx_vsiMRgzk-unsplash.jpg" alt="dessert2">
+          <img src="source/images/dessert/joyful-vT5xrj3z1OE-unsplash.jpg" alt="dessert3">
+          <img src="source/images/dessert/michaela-baum-VnM6_liIRJ0-unsplash.jpg" alt="dessert4">
+        </figure>
+      </section>
+      <section class="menu">
+        <h2>Drink</h2>
+        <p>These are the drinks.</p>
+        <figure>
+          <img src="source/images/drink/drink1.jpg" alt="drink1">
+          <img src="source/images/drink/drink2.jpg" alt="drink2">
+          <img src="source/images/drink/drink3.jpg" alt="drink3">
+          <img src="source/images/drink/drink4.jpg" alt="drink4">
+        </figure>
+      </section>
+      <div id="top">
+        <a href="#content">Top</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <aside>
+      <h2>Business Hours</h2>
+      <p>Monday - Friday: 10:00 AM - 8:00 PM</p>
+      <p>Saturday - Sunday: 11:00 AM - 10:00 PM</p>
+      <h2>Contact Information</h2>
+      <p>Phone: 012-345-6789</p>
+      <p>Email: info@example.com</p>
+    </aside>
+    <p>&copy; 2023 Dream Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

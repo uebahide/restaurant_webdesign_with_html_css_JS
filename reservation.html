@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <!--  -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <!--  -->
+
+  <link rel="stylesheet" id="stylesheet" href="style_light_mode.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
+  <title>Reservation-Dream Restaurant</title>
+</head>
+<!-- デスクトップファースト -->
+<body>
+  <a href="#content" class="skip-link">Skip to Main Content</a>
+  <header>
+    <div id="banner">
+      <p>Have a wonderful time.</p>
+    </div>
+    
+    <h1 id="title">Reservation</h1>
+  </header>
+
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="menu.html">Menu</a>
+          <a class="nav-item nav-link" href="information.html">Information</a>
+          <a class="nav-item nav-link active" href="reservation.html">Reservation</a>
+          <a class="nav-item nav-link" href="delivary.html">Delivary</a>
+          <a class="nav-item nav-link" href="aboutus.html">About us</a>
+        </div>
+      </div>
+      <div class="font_size_plus" onclick="bigger()">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="font_size_minus" onclick="smaller()">
+        <i class="fas fa-minus"></i>
+      </div>
+      <div class="setting_icon" onclick="changeMode()">
+        <i class="fas fa-cog" id="setting">dark mode</i>
+      </div>
+    </nav>
+
+    <div id="content">
+      <form class="form" action="mailto:uebahide@gmail.com" method="post" enctype="text/plain">
+        <div>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name" size="20" required><br><br>
+
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <input type="checkbox" id="checkbox" name="recieveEmail" value="yes">
+          <label for="checkbox">I would like to recieve periodic emails from us.</label>
+          <br><br>
+    
+          <label>Number of customers</label><br>
+          <input type="radio" id="number1" name="numberOfCustomer" value="1to3"><label for="number1"> 　1~3</label><br>
+          <input type="radio" id="number2" name="numberOfCustomer" value="4to10"><label for="number2"> 　4~10</label><br>
+          <input type="radio" id="number3" name="numberOfCustomer" value="moreThan11"><label for="number3" >　11~</label><br><br>
+
+          <label for="date">Date</label><br>
+          <input type="date" id="date" name="date" required><br><br> 
+        </div>
+
+        <div>
+          <label>Other Information</label><br>
+          <input type="checkbox" id="other1" name="smoke" value="yes"><label for="other1">　Do you smoke?</label><br>
+          <input type="checkbox" id="other2" name="withBaby" value="yes"><label for="other2">　Are you bringing your baby?</label><br>
+          <div class="other3">
+          <input type="checkbox" id="other3" name="allergies" value="yes">
+          <label for="other3">　Do you have allergies?<br>　(If you have, please write it down in the text area.)</label>
+          </div>
+          <br><br>
+
+          <label for="textarea">Any other requests</label><br>
+          <textarea name="request" id="textarea" cols="30" rows="10" maxlength="200"></textarea><br><br>
+
+          <div class="button">
+            <input class="fa submit" type="submit" value="&#xf00c; submit" onclick="return confirm('Do you submit?')">
+            <input  class="fa reset" type="reset" value="&#xf1f8; reset" onclick="return confirm('Do you really want to reset?')">
+            
+          </div>
+        </div>
+
+      </form>
+
+      <div id="top">
+        <a href="#content">Top</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <aside>
+      <h2>Business Hours</h2>
+      <p>Monday - Friday: 10:00 AM - 8:00 PM</p>
+      <p>Saturday - Sunday: 11:00 AM - 10:00 PM</p>
+      <h2>Contact Information</h2>
+      <p>Phone: 012-345-6789</p>
+      <p>Email: info@example.com</p>
+    </aside>
+    <p>&copy; 2023 Dream Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <!--  -->
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <!--  -->
+
+
+  <link rel="stylesheet" href="./style_light_mode.css" id="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+  <!--  -->
+
+  <title>Home-Dream Restaurant</title>
+</head>
+<!-- デスクトップファースト -->
+<body>
+  <a href="#content" class="skip-link">Skip to Main Content</a>
+  <header>
+    <div id="banner">
+      <p>Have a wonderful time.</p>
+    </div>
+    
+    <h1 id="title">Home - Welcome to Dream Restaurant</h1>
+  </header>
+
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="menu.html">Menu</a>
+          <a class="nav-item nav-link" href="information.html">Information</a>
+          <a class="nav-item nav-link" href="reservation.html">Reservation</a>
+          <a class="nav-item nav-link" href="delivary.html">Delivary</a>
+          <a class="nav-item nav-link" href="aboutus.html">About us</a>
+        </div>
+      </div>
+      <div class="font_size_plus" onclick="bigger()">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div class="font_size_minus" onclick="smaller()">
+        <i class="fas fa-minus"></i>
+      </div>
+      <div class="setting_icon" onclick="changeMode()">
+        <i class="fas fa-cog" id="setting">dark mode</i>
+      </div>
+    </nav>
+
+    <div id="content">
+      <article class="introduction">
+        <div>
+          <h2>Dream Restaurant</h2>
+          <p>The restaurant offers the finest cuisine with the motto of providing the best possible experience for its customers. <br>
+            We offer a wide variety of dishes, beverages, and desserts. <br>
+            We also offer special events on a regular basis.
+          </p>
+        </div>
+        <div class="video">
+          <video controls autoplay poster="source/video/sumnail.jpg">
+            <source src="source/video/restaurant.mp4">
+          </video>
+          <a href="description.html">Description of this video</a>
+        </div>
+      </article>
+      
+      <section class="inte_exte">
+        <h2>Restaurant interior and exterior</h2>
+        <figure class="images">
+          <div class="img_item"><img src="source/images/home/home1.jpg" alt="interior_exterior_img1"></div>
+          <div class="img_item"><img src="source/images/home/home2.jpg" alt="interior_exterior_img2"></div>
+          <div class="img_item"><img src="source/images/home/home3.jpg" alt="interior_exterior_img2"></div>
+          <div class="img_item"><img src="source/images/home/home4.jpg" alt="interior_exterior_img3"></div>
+          <div class="img_item"><img src="source/images/home/home5.jpg" alt="interior_exterior_img4"></div>
+          <div class="img_item"><img src="source/images/home/home6.jpg" alt="interior_exterior_img5"></div>
+        </figure>
+      </section>   
+      
+      <section class="info">
+        <h2>Info</h2>
+        <div class="sumnail">
+          <a href="information.html">
+            <img src="source/images/reccomendation/jennie-brown-MKBoRZEGeiM-unsplash.jpg" alt="spring_cake">
+          </a>
+          <div>
+            <p>2022/April-June</p>
+            <a href="information.html">Spring event!</a>
+            <p>Fruits cakes on sale! <br></p>
+          </div>
+        </div>
+        <div class="sumnail">
+          <a href="information.html">
+            <img src="source/images/celebration/cake1.jpg" alt="celebration_cake">
+          </a>
+          <div>
+            <p>2022/March-May</p>
+            <a href="information.html">Sale for student!</a>
+            <p>Let's celebrate for guraduation! <br></p>
+          </div>
+        </div>
+      </section>
+      <div id="top">
+        <a href="#content">Top</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <aside>
+      <h2>Business Hours</h2>
+      <p>Monday - Friday: 10:00 AM - 8:00 PM</p>
+      <p>Saturday - Sunday: 11:00 AM - 10:00 PM</p>
+      <h2>Contact Information</h2>
+      <p>Phone: 012-345-6789</p>
+      <p>Email: info@example.com</p>
+    </aside>
+    <p>&copy; 2023 Dream Project. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
